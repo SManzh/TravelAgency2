@@ -1,7 +1,7 @@
 package repository;
 
-import models.Country;
-import models.Tour;
+import entity.Tour;
+import entity.Country;
 
 import java.util.ArrayList;
 import java.util.Arrays;
