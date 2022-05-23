@@ -17,6 +17,4 @@ public class Country {
 
     private List<Tour> countryTours;
 
-    private List<Tour> clientTours;
-
 }

@@ -1,27 +1,36 @@
 package entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+
+import javax.persistence.*;
 
 
+@Table
+@Entity
+@NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
 public class Tour {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
+    @Column(length = 20, name = "type")
     private String tourType;
 
+    @Column(length = 20, name = "nutrition")
     private String nutritionType;
 
+    @Column(length = 20, name = "transportation")
     private String transportingType;
 
+    @Column(length = 3, name = "duration")
     private int tourDuration;
 
-    private int tourCost;
+    @Column(length = 10, name = "cost")
+    private double tourCost;
 
 }

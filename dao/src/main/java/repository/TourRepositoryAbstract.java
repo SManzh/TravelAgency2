@@ -1,6 +1,6 @@
 package repository;
 
-public interface CountryRepositoryAbstract {
+public interface TourRepositoryAbstract {
 
     void getAllTours();
 

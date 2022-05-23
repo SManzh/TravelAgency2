@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CountryRepository implements CountryRepositoryAbstract{
+public class TourRepository implements CountryRepositoryAbstract{
 
     private List<Tour> tourList;
 
@@ -15,7 +15,7 @@ public class CountryRepository implements CountryRepositoryAbstract{
 
     private Country country;
 
-    public CountryRepository() {
+    public TourRepository() {
         tourList = new ArrayList<>(Arrays.asList(
                 new Tour(1, "relax", "all inclusive", "train", 3, 340),
                 new Tour(2, "excursion", "2", "flight", 6, 810),
