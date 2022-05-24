@@ -1,9 +1,11 @@
 package controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import service.CountryService;
 
 @RestController
+@RequestMapping("/api")
 public class TravelController implements TravelControllerAbstract{
 
     private final CountryService countryService = new CountryService();

@@ -5,18 +5,20 @@ import lombok.*;
 import javax.persistence.*;
 
 
-@Table
-@Entity
-@NoArgsConstructor
 @Getter
 @Setter
-@ToString
-@AllArgsConstructor
+@SuppressWarnings("PMD")
+@Entity
+@Table(name = "tour")
 public class Tour {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "tour_id", insertable = false, updatable = false)
     private long id;
+
+    @Column(length = 30, name = "country")
+    private String country;
 
     @Column(length = 20, name = "type")
     private String tourType;
