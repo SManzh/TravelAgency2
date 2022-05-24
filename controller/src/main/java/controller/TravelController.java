@@ -1,10 +1,12 @@
 package controller;
 
+import org.springframework.web.bind.annotation.RestController;
 import service.CountryService;
 
+@RestController
 public class TravelController implements TravelControllerAbstract{
 
-    private CountryService countryService = new CountryService();
+    private final CountryService countryService = new CountryService();
 
 
     @Override

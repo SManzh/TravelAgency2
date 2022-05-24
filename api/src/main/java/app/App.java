@@ -1,13 +1,13 @@
 package app;
 
-import view.View;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class App {
-    public App() {
-    }
 
     public static void main(String[] args) {
-        View view = new View();
-        view.View();
+        SpringApplication.run(App.class, args);
     }
+
 }
